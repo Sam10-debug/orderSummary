@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    border-radius: 1rem;
+    /* border: red solid; */
+    background-color: white;
+}
+.container .dance{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 350px;
+}
+.container > p{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: larger;
+    font-weight: bolder;
+    color: hsl(223, 47%, 23%);
+}
+.container .text{
+    text-align: center;
+    color:   hsl(224, 23%, 55%);
+}
+.container .annual{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 0.5rem;
+    height: 60px;
+    background-color:  hsl(225, 100%, 98%);
+    justify-content: center;
+    align-items: center;
+}
+.container .annual .music img{
+    height: 35px;
+}
+.container .annual .music {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: -19px;
+}
+.container .annual .annual-plan{
+    flex:2;
+    text-align: left;
+}
+.container .annual .annual-plan .plan {
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+.container .annual .annual-plan .money{
+    color: hsl(224, 23%, 55%);
+}
+.container .annual .change{
+    flex:1;
+    text-align: center;
+    margin-top: 5px;
+}
+.container .annual .change p{
+    color:hsl(245, 75%, 52%) ;
+    font-weight: bold;
+}
+.container .proceed{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 35px;
+    border-radius: 0.5rem;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    font-weight: bold;
+    /* box-shadow: css box shadow generator; */
+}
+.container .cancel{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    place-items: center;
+    
+}
+.container .cancel p{
+    color:  hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+@media screen and (min-width:600px) {
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        font-size: 1.5rem;
+    }
+    .container .dance{
+        width: 450px;
+    }
+    .container .text{
+        font-size: 1.2rem;
+    }.container{
+        width: 450px;
+    }
+    .container .annual{
+        height: 80px;
+    }
+    .container .annual .music img{
+        height: 40px;
+    } 
+    .container .annual .annual-plan > p{
+        font-size: 1.2rem;
+    }
+    .container .annual .change p{
+        font-size: 1.2rem;
+    }
+    .container .cancel p{
+        font-size: 1.2rem;
+    }
+    .container .proceed{
+        height: 40px;
+    }
+    .container .proceed p{
+        font-size: 1.2rem;
+    }
+    .container .annual .music {
+        margin-left: -40px;
+    }
+}
